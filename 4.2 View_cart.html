@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="4.2 View_cart.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+
+    <main>
+        <div class="cart-summary">
+            <h2>Your Cart Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="fresh_milk.jpg" alt="Fresh Milk" class="product-image"> Fresh Milk
+                        </td>
+                        <td>$3.50</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                        </td>
+                        <td>$3.50</td>
+                        <td>
+                            <button class="remove-item">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="organic_eggs.jpg" alt="Organic Eggs" class="product-image"> Organic Eggs
+                        </td>
+                        <td>$5.00</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                        </td>
+                        <td>$5.00</td>
+                        <td>
+                            <button class="remove-item">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="homemade_butter.jpg" alt="Homemade Butter" class="product-image"> Homemade Butter
+                        </td>
+                        <td>$7.00</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                        </td>
+                        <td>$7.00</td>
+                        <td>
+                            <button class="remove-item">Remove</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cart-total">
+                <h3>Total Cost: $15.50</h3>
+            </div>
+
+            <div class="shipping-estimate">
+                <h3>Shipping & Tax Estimate</h3>
+                <label for="location">Enter your location:</label>
+                <input type="text" id="location" placeholder="City, State">
+                <button id="estimate-shipping">Estimate Shipping</button>
+                <p id="shipping-result"></p>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="checkout">Proceed to Checkout</button>
+            <button id="continue-shopping">Continue Shopping</button>
+            <button id="clear-cart">Clear Cart</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Thank you for shopping with us!</p>
+    </footer>
+
+    <script src="4.2 View_cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Data and Reports</title>
+    <link rel="stylesheet" href="2.5 View_history.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Historical Data And Reports</h1>
+    </header>
+
+    <main>
+        <div class="filters">
+            <label for="date-range">Date Range:</label>
+            <input type="date" id="start-date">
+            <input type="date" id="end-date">
+            
+            <label for="product-type">Product Type:</label>
+            <select id="product-type">
+                <option value="all">All</option>
+                <option value="milk">Milk</option>
+                <option value="eggs">Eggs</option>
+                <option value="meat">Meat</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <button id="filter-data">Filter</button>
+        </div>
+
+        <div class="data-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Product Type</th>
+                        <th>Quantity</th>
+                        <th>Quality Grade</th>
+                        <th>Animal/Bird ID</th>
+                    </tr>
+                </thead>
+                <tbody id="historical-data-body">
+                    <!-- Sample Data Row -->
+                    <tr>
+                        <td>2024-10-01</td>
+                        <td>Milk</td>
+                        <td>100 litres</td>
+                        <td>A</td>
+                        <td>Cow-001</td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-05</td>
+                        <td>Eggs</td>
+                        <td>200 kgs</td>
+                        <td>B</td>
+                        <td>Hen-002</td>
+                    </tr>
+                    <!-- More rows can be added dynamically -->
+                </tbody>
+            </table>
+        </div>
+        <div class="styled-divider"></div>
+        
+        <div class="charts">
+            <h2>Product Distribution</h2>
+            <canvas id="barChart" width="400" height="200"></canvas>
+
+            <div class="styled-divider"></div>
+
+            <canvas id="pieChart" width="400" height="200"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <button id="return-dashboard">Return to Dashboard</button>
+    </footer>
+
+    <script src="2.5 View_history.js"></script>
+</body>
+</html>

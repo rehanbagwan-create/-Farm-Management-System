@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Information</title>
+    <link rel="stylesheet" href="1.3 Farm_Information.css">
+</head>
+<body>
+    <h1>Farm Information</h1>
+    <form action="/submit_farm_info" method="POST">
+        <!-- Farm Name -->
+        <label for="farm-name">Farm Name:</label><br>
+        <input type="text" id="farm-name" name="farm_name" placeholder="Enter the name of the farm" required><br><br>
+
+        <!-- Farm Location -->
+        <label for="farm-location">Farm Location:</label><br>
+        <input type="text" id="farm-location" name="farm_location" placeholder="Enter the address or location of the farm" required><br><br>
+
+        <!-- Farm Size -->
+        <label for="farm-size">Farm Size (acres/hectares):</label><br>
+        <input type="number" id="farm-size" name="farm_size" placeholder="Enter the size of the farm" required><br><br>
+
+        <!-- Farm Type -->
+        <label for="farm-type">Farm Type:</label><br>
+        <select id="farm-type" name="farm_type" required>
+            <option value="Dairy">Dairy</option>
+            <option value="Mixed Livestock">Mixed Livestock</option>
+            <option value="Crop Farming">Crop Farming</option>
+            <option value="Poultry">Poultry</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <!-- Number of Livestock -->
+        <label for="livestock-number">Number of Livestock:</label><br>
+        <input type="number" id="livestock-number" name="livestock_number" placeholder="Enter the number of livestock" required><br><br>
+
+        <!-- Submit button -->
+        <div class="btn">
+
+        <a href="1.4 Livestock_Data.html">
+            <input type="button" value="next">
+         </a>
+         <br><br>
+        
+        <!-- Back button -->
+         <a href="1.2 Personal_Information.html">
+             <input type="button" value="Back">
+         </a>
+        </div>
+    </form>
+</body>
+</html>

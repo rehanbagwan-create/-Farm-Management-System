@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livestock Data</title>
+    <link rel="stylesheet" href="1.4 Livestock_Data.css">
+</head>
+<body>
+    <h1>Livestock Data</h1>
+    <form action="/submit_livestock_info" method="POST">
+        <!-- Livestock Type -->
+        <label for="livestock-type">Livestock Type:</label><br>
+        <select id="livestock-type" name="livestock_type" required>
+            <option value="Cow">Cow</option>
+            <option value="Buffalo">Buffalo</option>
+            <option value="Goats">Goats</option>
+            <option value="Sheep">Sheep</option>
+            <option value="Mixed">Mixed</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <!-- Milk Production -->
+        <label for="milk-production">Milk Production (liters):</label><br>
+        <input type="number" id="milk-production" name="milk_production" placeholder="Enter production amount" required><br><br>
+
+        <!-- Milk Production Frequency -->
+        <label for="production-frequency">Production Frequency:</label><br>
+        <select id="production-frequency" name="production_frequency" required>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+        </select><br><br>
+
+        <!-- Health Status -->
+        <label for="health-status">Health Status:</label><br>
+        <select id="health-status" name="health_status" required>
+            <option value="Healthy">Healthy</option>
+            <option value="Sick">Sick</option>
+            <option value="Under Treatment">Under Treatment</option>
+        </select><br><br>
+
+        <!-- Submit button -->
+        <div class="btn">
+        <a href="1.5 Compliance_and_Certifications.html">
+            <input type="button" value="Next">
+         </a>
+         <br><br>
+        
+        <!-- Back button -->
+         <a href="1.3 Farm_Information.html">
+             <input type="button" value="Back">
+         </a>
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance and Certifications</title>
+    <script>
+        function showAlert() {
+            alert('Registration successful');
+        }
+    </script>
+    <link rel="stylesheet" href="1.5 Compliance_and_Certifications.css">
+</head>
+<body>
+    <h1>Compliance and Certifications</h1>
+    <form action="/submit_certification_info" method="POST" enctype="multipart/form-data">
+        <!-- Certification Type -->
+        <label for="certification-type">Certification Type:</label><br>
+        <select id="certification-type" name="certification_type" required>
+            <option value="Organic">Organic</option>
+            <option value="Grass-Fed">Grass-Fed</option>
+            <option value="Free-Range">Free-Range</option>
+            <option value="Non-GMO">Non-GMO</option>
+            <option value="Sustainable">Sustainable</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <!-- Certification Upload -->
+        <label for="certification-upload">Upload Certification:</label><br>
+        <input type="file" id="certification-upload" name="certification_upload" accept=".pdf,.jpg,.png" required><br><br>
+
+        <!-- Regulatory Compliance -->
+        <label for="regulatory-compliance">
+            <input type="checkbox" id="regulatory-compliance" name="regulatory_compliance" required>
+            I confirm that the farm complies with all local regulations.
+        </label><br><br>
+
+        <!-- Submit button -->
+        <form action="/submit_final_confirmation" method="POST">
+            <a href="2.1 Product_Management_Dashboard.html">
+                <button onclick="showAlert()" ><a href="2.1 Product_Management_Dashboard.jsk">Click to Confirm Registration</a></button>
+            </a>
+        </form>
+         <br><br>
+        
+        <!-- Back button -->
+        <div class="btn">
+         <a href="1.4 Livestock_Data.html">
+             <input type="button" value="Back">
+         </a>
+        </div>
+    </form>
+    
+</body>
+</html>

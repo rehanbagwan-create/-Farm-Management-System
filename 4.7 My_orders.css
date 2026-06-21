@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least full height of viewport */
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Orders Container */
+.orders-container {
+    width: 80%;
+    max-width: 800px; /* Limit maximum width */
+    margin: 20px auto; /* Center the container */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between order items */
+}
+
+.order-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/* Buttons Styling */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.back-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+/* Footer Styles */
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.825);
+    color: white;
+}

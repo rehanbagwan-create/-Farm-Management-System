@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Orders</title>
+    <link rel="stylesheet" href="3.5 View_orders.css">
+</head>
+<body>
+    <header>
+        <h1>View Orders</h1>
+    </header>
+
+    <main>
+        <div class="filter-container">
+            <label for="order-status">Filter by Status:</label>
+            <select id="order-status">
+                <option value="all">All</option>
+                <option value="pending">Pending</option>
+                <option value="shipped">Shipped</option>
+                <option value="completed">Completed</option>
+            </select>
+            <button id="filter-orders">Filter</button>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1234</td>
+                        <td>Milk</td>
+                        <td>20 litres</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>#1235</td>
+                        <td>Eggs</td>
+                        <td>50 units</td>
+                        <td>Shipped</td>
+                    </tr>
+                    <tr>
+                        <td>#1236</td>
+                        <td>Butter</td>
+                        <td>5 kg</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>#1237</td>
+                        <td>Chicken</td>
+                        <td>10 kg</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="buttons">
+            <button id="order-details-and-management">Order Details And Management</button>
+            <button id="view-order-details">View Order Details</button>
+            <button id="update-order-status">Update Order Status</button>
+            <button id="back">Back to Dashboard</button>
+        </div>
+    </main>
+
+    <script src="3.5 View_orders.js"></script>
+</body>
+</html>

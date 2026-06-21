@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="2.3 Add New Log.css">
+</head>
+<body>
+    <header>
+        <h3 style="font-size: 50px; margin-bottom: 50px;">Add Log</h3>
+    </header>
+    <div class="container">
+        <div class="card left">
+            <h2>Add New Milk Product</h2>
+            <form id="milk-product-form">
+                <label for="milk-date">Date:</label>
+                <input type="date" id="milk-date" required>
+                
+                <label for="milk-quantity">Quantity of Log (litres):</label>
+                <input type="number" id="milk-quantity" required>
+                
+                <label for="milk-quality">Quality of Log (Grade):</label>
+                <select id="milk-quality" required>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+
+                <label for="milk-animal-id">Animal ID:</label>
+                <input type="text" id="milk-animal-id" required>
+
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+        <div class="card right">
+            <h2>Add New Livestock Product</h2>
+            <form id="livestock-product-form">
+                <label for="livestock-date">Date:</label>
+                <input type="date" id="livestock-date" required>
+
+                <label for="livestock-quantity">Quantity of Log (kgs):</label>
+                <input type="number" id="livestock-quantity" required>
+
+                <label for="livestock-quality">Quality of Log (Grade):</label>
+                <select id="livestock-quality" required>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+
+                <label for="livestock-animal-id">Animal/Bird ID:</label>
+                <input type="text" id="livestock-animal-id" required>
+
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <button id="back-to-dashboard">Back to Dashboard</button>
+    </footer>
+
+    <script src="2.3 Add New Log.js"></script>
+</body>
+</html>

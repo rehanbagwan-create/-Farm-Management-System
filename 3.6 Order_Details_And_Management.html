@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details And Management</title>
+    <link rel="stylesheet" href="3.6 Order_Details_And_Management.css">
+</head>
+<body>
+    <header>
+        <h1>Order Details And Management</h1>
+    </header>
+
+    <main>
+        <div class="order-details-container">
+            <h2>Order ID: #1234</h2>
+            <div class="details">
+                <h3>Buyer Information</h3>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Contact:</strong> johndoe@example.com</p>
+                <p><strong>Phone:</strong> +1234567890</p>
+
+                <h3>Ordered Items</h3>
+                <ul>
+                    <li>Milk - 20 litres</li>
+                    <li>Eggs - 12 units</li>
+                    <li>Butter - 500g</li>
+                </ul>
+
+                <h3>Payment Status</h3>
+                <p><strong>Status:</strong> Paid</p>
+
+                <h3>Shipping Details</h3>
+                <p><strong>Address:</strong> 123 Dairy Lane, Milk City, CA</p>
+                <p><strong>Shipping Method:</strong> Local Delivery</p>
+                <label for="tracking-info">Add Tracking Information:</label>
+                <input type="text" id="tracking-info" placeholder="Enter tracking number">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="update-status">Update Status</button>
+            <button id="contact-buyer">Contact Buyer</button>
+            <button id="back-orders">Back to Orders List</button>
+        </div>
+    </main>
+
+    <script src="3.6 Order_Details_And_Management.js"></script>
+</body>
+</html>

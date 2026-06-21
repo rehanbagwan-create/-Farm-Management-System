@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least full height of viewport */
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Wishlist Container */
+.wishlist-container {
+    width: 80%;
+    max-width: 800px; /* Limit maximum width */
+    margin: 20px auto; /* Center the container */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between product items */
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.product-item img {
+    width: 80px; /* Fixed width for product images */
+    height: auto;
+    border-radius: 5px;
+}
+
+h3 {
+    margin: 0 10px; /* Space between image and product name */
+}
+
+/* Buttons Styling */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between buttons */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Back Button */
+.back-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.825);
+    color: white;
+}

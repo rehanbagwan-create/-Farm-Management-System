@@ -1,0 +1,79 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Sticky Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Content Section Styles */
+.content {
+    display: flex;
+    justify-content: space-between; /* Space between lists */
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.content > div {
+    background-color: white;
+    height: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Allow each section to take equal space */
+    margin-right: 20px; /* Space between columns */
+}
+
+.content > div:last-child {
+    margin-right: 0; /* Remove right margin from the last element */
+}
+
+/* Button Styles */
+.buttons {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 20px; /* Space between buttons */
+    margin-top: 50px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}

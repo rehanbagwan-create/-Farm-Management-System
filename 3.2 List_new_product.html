@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List A New Product</title>
+    <link rel="stylesheet" href="3.2 List_new_product.css">
+</head>
+<body>
+    <header>
+        <h1>List A New Product</h1>
+    </header>
+
+    <main>
+        <div class="card">
+            <form id="new-product-form">
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" placeholder="Enter product name" required>
+
+                <label for="category">Category:</label>
+                <select id="category" required>
+                    <option value="">Select category</option>
+                    <option value="dairy">Dairy</option>
+                    <option value="meat">Meat</option>
+                    <option value="produce">Produce</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" placeholder="Enter product description" required></textarea>
+
+                <label for="quantity">Quantity Available:</label>
+                <input type="number" id="quantity" placeholder="Enter quantity available" required>
+
+                <label for="price">Price (per unit):</label>
+                <input type="number" id="price" placeholder="Enter price per unit" required>
+
+                <label for="product-image">Upload Images:</label>
+                <input type="file" id="product-image" accept="image/*">
+
+                <label for="shipping-options">Shipping Options:</label>
+                <select id="shipping-options" required>
+                    <option value="">Select shipping method</option>
+                    <option value="pickup">Local Pickup</option>
+                    <option value="delivery">Delivery</option>
+                </select>
+
+                <div class="form-buttons">
+                    <button type="submit" id="save-continue">Save and Continue</button>
+                    <button type="button" id="back-dashboard">Back to Dashboard</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="3.2 List_new_product.js"></script>
+</body>
+</html>
